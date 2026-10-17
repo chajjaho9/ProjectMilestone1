@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Concepts - HTTP Research</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="site-title">Key Concepts</h1>
+        <p>Core principles underlying modern web communications</p>
+    </header>
+
+    <nav id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="topic1.html" class="nav-link">Foundational Architecture</a>
+        <a href="topic2.html" class="nav-link">Historical Evolution</a>
+        <a href="concepts.html" class="nav-link">Key Concepts</a>
+        <a href="references.html" class="nav-link">References</a>
+        <a href="about.html" class="nav-link">About Me</a>
+    </nav>
+
+    <div class="container">
+        <h2>Essential Technical Concepts</h2>
+        <ol>
+            <li><strong>Stateless Principle:</strong> Each request is completely independent; servers retain zero recollection of previous requests, maximizing scalability[cite: 208].</li>
+            <li><strong>State Management:</strong> Overcoming statelessness using browser cookies, URL parameters, and JSON Web Tokens (JWT)[cite: 208].</li>
+            <li><strong>Protocol Stack:</strong> The hierarchical arrangement where HTTP sits on top of transport protocols like TCP or UDP/QUIC[cite: 209].</li>
+            <li><strong>Status Code Categories:</strong> Standardized numerical ranges (1xx, 2xx, 3xx, 4xx, 5xx) communicating request outcomes[cite: 211].</li>
+            <li><strong>Binary Framing Layer:</strong> Replaces plaintext messages in HTTP/2 with compact binary frames multiplexed over streams[cite: 214].</li>
+            <li><strong>Transport Layer Security (TLS):</strong> Encrypts web traffic within HTTPS to protect data against tampering and sniffing[cite: 216].</li>
+            <li><strong>Head-of-Line Blocking:</strong> A limitation in TCP where packet loss on one stream stalls subsequent data, resolved by QUIC/UDP streams[cite: 215, 220].</li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>IT 3203 Class Project | <a href="https://ksuweb.github.io/IT3203/" target="_blank" style="color: #3498db;">Course Website</a>[cite: 203]</p>
+    </footer>
+
+</body>
+</html>
