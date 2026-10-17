@@ -24,12 +24,20 @@
 
     <div class="container">
         <h2>Client-Server Model & Request Flow</h2>
-        <p>HTTP operates as an asymmetrical request-response protocol across networked systems[cite: 206]. Communication involves two primary entities:</p>
+        <p>HTTP operates as an asymmetrical request-response protocol across networked systems. Communication involves two primary entities:</p>
         
         <ul>
-            <li><strong>The User Agent (Client):</strong> Initiates communication by dispatching requests (e.g., web browsers, cURL)[cite: 206].</li>
-            <li><strong>The Web Server:</strong> Awaits connections, processes requests, interacts with databases, and returns HTTP responses[cite: 206].</li>
+            <li><strong>The User Agent (Client):</strong> Initiates communication by dispatching requests (e.g., web browsers, command-line tools like cURL).</li>
+            <li><strong>The Web Server:</strong> Awaits incoming connections, processes incoming requests, interacts with databases or file systems, and returns formatted HTTP responses.</li>
         </ul>
+
+        <h3>Example HTTP Request Message</h3>
+        <div class="code-block">
+GET /index.html HTTP/1.1<br>
+Host: www.example.com<br>
+Accept-Language: en<br>
+User-Agent: Mozilla/5.0
+        </div>
 
         <h3>The Transactional Cycle</h3>
         <table class="content-table">
@@ -41,23 +49,23 @@
             <tr>
                 <td>1</td>
                 <td>DNS & Handshake</td>
-                <td>Browser resolves domain to IP and establishes transport connection[cite: 207].</td>
+                <td>Browser resolves domain name to IP address and establishes reliable transport connection.</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Request Transmission</td>
-                <td>Client sends method, path, headers, and optional payload[cite: 207].</td>
+                <td>Client sends request message containing method, path, headers, and optional payload body.</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Server Response</td>
-                <td>Server evaluates request, generates status code, and transmits payload[cite: 207].</td>
+                <td>Server evaluates request, generates status code, and transmits headers alongside resource payload.</td>
             </tr>
         </table>
     </div>
 
     <footer>
-        <p>IT 3203 Class Project | <a href="https://ksuweb.github.io/IT3203/" target="_blank" style="color: #3498db;">Course Website</a>[cite: 203]</p>
+        <p>IT 3203 Class Project | <a href="https://ksuweb.github.io/IT3203/" target="_blank" style="color: #64b5f6; text-decoration: underline;">Course Website</a></p>
     </footer>
 
 </body>
