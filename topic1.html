@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundational Architecture - HTTP Research</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="site-title">Foundational Architecture</h1>
+        <p>Understanding client-server roles and request-response cycles</p>
+    </header>
+
+    <nav id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="topic1.html" class="nav-link">Foundational Architecture</a>
+        <a href="topic2.html" class="nav-link">Historical Evolution</a>
+        <a href="concepts.html" class="nav-link">Key Concepts</a>
+        <a href="references.html" class="nav-link">References</a>
+        <a href="about.html" class="nav-link">About Me</a>
+    </nav>
+
+    <div class="container">
+        <h2>Client-Server Model & Request Flow</h2>
+        <p>HTTP operates as an asymmetrical request-response protocol across networked systems[cite: 206]. Communication involves two primary entities:</p>
+        
+        <ul>
+            <li><strong>The User Agent (Client):</strong> Initiates communication by dispatching requests (e.g., web browsers, cURL)[cite: 206].</li>
+            <li><strong>The Web Server:</strong> Awaits connections, processes requests, interacts with databases, and returns HTTP responses[cite: 206].</li>
+        </ul>
+
+        <h3>The Transactional Cycle</h3>
+        <table class="content-table">
+            <tr>
+                <th>Step</th>
+                <th>Action</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DNS & Handshake</td>
+                <td>Browser resolves domain to IP and establishes transport connection[cite: 207].</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Request Transmission</td>
+                <td>Client sends method, path, headers, and optional payload[cite: 207].</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Server Response</td>
+                <td>Server evaluates request, generates status code, and transmits payload[cite: 207].</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>IT 3203 Class Project | <a href="https://ksuweb.github.io/IT3203/" target="_blank" style="color: #3498db;">Course Website</a>[cite: 203]</p>
+    </footer>
+
+</body>
+</html>
