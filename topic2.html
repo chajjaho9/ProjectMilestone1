@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Evolution - HTTP Research</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="site-title">Historical Evolution</h1>
+        <p>From HTTP/0.9 to HTTP/3 and QUIC</p>
+    </header>
+
+    <nav id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="topic1.html" class="nav-link">Foundational Architecture</a>
+        <a href="topic2.html" class="nav-link">Historical Evolution</a>
+        <a href="concepts.html" class="nav-link">Key Concepts</a>
+        <a href="references.html" class="nav-link">References</a>
+        <a href="about.html" class="nav-link">About Me</a>
+    </nav>
+
+    <div class="container">
+        <h2>Milestones in Protocol Development</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>HTTP/0.9 (1991)</h3>
+                <p>The one-line protocol. Supported only the GET method with no headers or status codes, transferring raw HTML over single-use TCP connections[cite: 212].</p>
+            </div>
+            <div class="card">
+                <h3>HTTP/1.0 (1996)</h3>
+                <p>Introduced status codes, content-type headers, versioning strings, and basic caching directives, requiring new TCP handshakes per file[cite: 212].</p>
+            </div>
+            <div class="card">
+                <h3>HTTP/1.1 (1997)</h3>
+                <p>Formalized in RFC 2068, adding persistent keep-alive connections, Host headers for virtual hosting, and advanced caching[cite: 213].</p>
+            </div>
+            <div class="card">
+                <h3>HTTP/2 (2015)</h3>
+                <p>Standardized in RFC 7540, introducing binary framing, request multiplexing over a single TCP socket, and HPACK header compression[cite: 214].</p>
+            </div>
+            <div class="card">
+                <h3>HTTP/3 & QUIC</h3>
+                <p>Shifts the transport layer from TCP to UDP, eliminating head-of-line blocking and providing instant 0-RTT connection establishment[cite: 215].</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>IT 3203 Class Project | <a href="https://ksuweb.github.io/IT3203/" target="_blank" style="color: #3498db;">Course Website</a>[cite: 203]</p>
+    </footer>
+
+</body>
+</html>
